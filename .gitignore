@@ -1,0 +1,35 @@
+# Dependencies
+# Never upload this; it's huge and can be reinstalled with 'npm install'
+node_modules/
+
+# Build Outputs
+# If you are using Vite, ignore the 'dist' folder
+dist/
+# If you are using a different builder, you might see 'build'
+build/
+bin/
+obj/
+
+# Tailwind / CSS
+# Only ignore this if you generate it every time (like in Method 1 of my previous reply)
+# .css.map files are usually not needed on GitHub
+*.css.map
+
+# Environment Variables
+# Crucial: This prevents your private API keys from being public
+.env
+.env.local
+.env.*.local
+
+# IDE / Editor Private Files
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# OS Files
+.DS_Store
+Thumbs.db
