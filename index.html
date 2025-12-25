@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="main.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen font-sans-serif bg-linear-to-r from-purple-900 to-blue-700 text-white">
+    <header class="bg-[rgb(32,32,204)] fixed top-0 left-0 right-0 shadow-md">
+        <div class="max-w-7xl mx-auto py-3 px-6">
+            <nav class="flex justify-between items-center">
+                <h2 href="#" class="text-xl font-bold">Malak Sherif</h2>
+                <ul class="md:flex justify-center items-center gap-3 hidden">
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Home">Home</a></li>
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#About">About</a></li>
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Education">Education</a></li>
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Skills">Skills</a></li>
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Experience">Experience</a></li>
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Services">Services</a></li>
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Projects">Projects</a></li>
+                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Contact">Contact</a></li>
+                </ul>
+                <button id="menu-btn" class="md:hidden fixed top-4 right-6 z-50">
+                    <i id="menu-icon" class="fa fa-bars text-2xl"></i>
+                </button>
+            </nav>
+            <div id="mobile-menu" class="fixed top-0 right-0 h-full w-3/4 bg-[rgb(20,40,120)] z-40 translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-center items-center px-10 gap-6 text-2xl shadow-2xl">
+                <a class="mobile-link hover:text-blue-300" href="#Home">Home</a>
+                <a class="mobile-link hover:text-blue-300" href="#About">About</a>
+                <a class="mobile-link hover:text-blue-300" href="#Education">Education</a>
+                <a class="mobile-link hover:text-blue-300" href="#Skills">Skills</a>
+                <a class="mobile-link hover:text-blue-300" href="#Experience">Experience</a>
+                <a class="mobile-link hover:text-blue-300" href="#Services">Services</a>
+                <a class="mobile-link hover:text-blue-300" href="#Projects">Projects</a>
+                <a class="mobile-link hover:text-blue-300" href="#Contact">Contact</a>
+            </div>
+            <div id="menu-overlay" class="fixed inset-0 bg-black/50 z-30 hidden"></div>
+        </div>
+    </header>
+    <main class="">
+        <section class="max-w-7xl mx-auto py-52 px-6 flex justify-between gap-7 items-center flex-col-reverse md:flex-row">
+            <div class="flex justify-center items-start gap-7 flex-col" id="Home">
+                <h1 class="text-5xl text-center md:text-left font-extrabold">Malak Sherif</h1>
+                <p class="text-2xl text-blue-500 font-semibold">Data Scientist</p>
+                <p class="text-lg">Beyond my technical expertise, I also have a passion for drawing 🎨. <br>This creative perspective enhances my ability to design dashboards and reports that <br> are not only accurate but also visually engaging and impactful.</p>
+                <div>
+                    <a href="#Projects" class="bg-indigo-700 py-0.5 px-12 rounded-lg hover:bg-indigo-500 transition-all duration-300 ease-in-out text-md font-semibold">Projects</a>
+                </div>
+                <div>
+                    <ul class="flex justify-center content-center gap-8">
+                        <li class="flex flex-col justify-center content-center text-xl text-center">
+                            <span class="text-3xl font-extrabold text-blue-500">1+</span>
+                            Projects
+                        </li>
+                        <li class="flex flex-col justify-center content-center text-xl text-center">
+                            <span class="text-3xl font-extrabold text-blue-500">AI</span>
+                            Specialization
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="">
+                <img class="md:w-72 md:h-72 w-64 h-64 border border-fuchsia-800 rounded-full" src="/assets/personal-photo.jpg" alt="personal-photo" class="">
+            </div>
+        </section>
+        <hr class="mx-auto max-w-1/4">
+        <section class="max-w-7xl mx-auto py-40 px-6" id="About">
+            <h2 class="text-5xl text-center font-extrabold mb-20">About Me</h2>
+            <article class="flex flex-col justify-center items-center gap-3.5 md:w-4/5">
+                <p class="text-xl">I am a passionate Data Scientist in training with a strong foundation in programming, statistics, and databases. I specialize in Python, SQL, Power BI, and machine learning techniques to transform raw data into actionable insights and predictive models. Currently, I am enhancing my skills through the DEPI program in Data Science & AI, working on real-world projects that combine technical expertise with creativity.</p>
+                <p class="text-xl">My goal is to support businesses and organizations in making data-driven decisions that boost efficiency and generate measurable impact. With a mix of analytical thinking and problem-solving skills, I am eager to contribute to innovative projects and connect with professionals who share the same vision.</p>
+            </article>
+        </section>
+        <hr class="mx-auto max-w-1/4">
+        <section class="max-w-7xl mx-auto py-40 px-6" id="Education">
+            <h2 class="text-5xl text-center font-extrabold mb-20">Education</h2>
+            <div class="flex justify-start items-start gap-4 bg-[rgb(10,10,77)] p-8 rounded-2xl">
+                <i class="fa-solid fa-graduation-cap text-4xl"></i>
+                <div class="">
+                    <h3 class="text-3xl font-bold mb-2">Computer Science & Statistics</h3>
+                    <ul class="">
+                        <li class="text-gray-400 mb-2">Helwan University</li>
+                        <li class="text-orange-300">October 2023 - June 2027</li>
+                    </ul>
+                </div>	 
+            </div>
+        </section>
+        <hr class="mx-auto max-w-1/4">
+        <section class="max-w-7xl mx-auto py-40 px-6" id="Skills">
+            <div class="grid grid-cols-1 grid-rows-6 md:grid-cols-3 md:grid-rows-2 gap-4 mb-12">
+                <h2 class="text-5xl text-center font-extrabold mb-20">Technical Skills</h2>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
+                    <h3 class="text-2xl mb-4 text-blue-800">Tools</h3>
+                    <ul class="flex justify-center items-center flex-wrap gap-3">
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">Power BI</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">Jupyter Notebook</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">VS Code</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">GitHub</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">Excel</li>
+                    </ul>
+                </div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
+                    <h3 class="text-2xl mb-4 text-blue-800">Libraries</h3>
+                    <ul class="flex justify-center items-center flex-wrap gap-3">
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">pandas</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">numpy</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">seaborn</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">matplotlib</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">scikit learn</li></ul>
+                </div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
+                    <h3 class="text-2xl mb-6 text-blue-800">Web Development</h3>
+                    <ul class="flex justify-start items-center flex-wrap gap-3">
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-gray-300">HTML</li>
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-gray-300">CSS</li>
+                    </ul>
+                </div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
+                    <h3 class="text-2xl mb-6 text-blue-800">Database</h3>
+                    <ul class="flex justify-start items-center flex-wrap gap-3">
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-orange-500">SQL</li>
+                    </ul>
+                </div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
+                    <h3 class="text-2xl mb-6 text-blue-800">Programming Language</h3>
+                    <ul class="flex justify-start items-center flex-wrap gap-3">
+                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-yellow-200">Python</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 grid-rows-8 md:grid-cols-4 md:grid-rows-2 gap-0 md:gap-4" id="Skills">
+                <h2 class="text-5xl text-center font-extrabold mb-20">Soft Skills</h2>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Problem-Solving</div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Analytic Thinking</div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Communication</div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Teamwork</div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Attention to Details</div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Time Management</div>
+                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Creativity</div>
+            </div>
+        </section>
+        <hr class="mx-auto max-w-1/4">
+        <section class="max-w-7xl mx-auto py-40 px-6" id="Experience">
+            <h2 class="text-5xl text-center font-extrabold mb-20">Experience</h2>
+            <div class="mb-20 bg-[rgb(10,10,77)] p-5 rounded-2xl px-7">
+                <h3 class="text-lg md:text-xl mb-6 text-blue-600 font-bold">Data Science & AI Trainee – DEPI Program with eYouth(Jun 2025 – Dec 2025)</h3>
+                <ul class="flex flex-col justify-center items-start list-disc mx-3">
+                    <li class="mb-2.5">Designed and implemented data-driven projects using Python, SQL, and Power BI.</li>
+                    <li class="mb-2.5">Built a Bank Management System to manage customers, employees, and loans, applying database design and SQL queries.</li>
+                    <li class="mb-2.5">Conducted data cleaning, exploration, and visualization for real-world datasets.</li>
+                    <li class="mb-2.5">Collaborated with a team of 5 members to deliver end-to-end solutions.</li>
+                </ul>
+            </div>
+            <div class="">
+                <h2 class="text-4xl md::text-5xl text-center font-extrabold mb-20">Extracurricular activities</h2>
+                <div class="mb-20 bg-[rgb(10,10,77)] p-5 rounded-2xl px-7">
+                    <h3 class="text-lg md:text-xl mb-6 text-blue-600 font-bold">Youth Leading Youth (YLY) – Ministry of Youth & Sports(2025 – Present)</h3>
+                    <ul class="flex flex-col justify-center items-start list-disc mx-3">
+                        <li class="">Volunteer - Social Media team</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <hr class="mx-auto max-w-1/4">
+        <section class="max-w-7xl mx-auto py-40 px-6" id="Services">
+            <h2 class="text-5xl text-center font-extrabold mb-16">Offered Services</h2>
+            <p class="text-center text-2xl italic text-gray-300 mb-16">I provide</p>
+            <div class="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-1 gap-4">
+                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
+                    <i class="fa-solid fa-chart-line text-3xl"></i>
+                    <h4 class="text-md text-center font-bold text-blue-400">Data Analysis and Visualization</h4>
+                    <p>Deliver actionable insights</p>
+                </div>
+                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
+                    <i class="fa-solid fa-robot text-3xl"></i>
+                    <h4 class="text-md text-center font-bold text-blue-400">Machine learning, Deep learning and Predective Modeling</h4>
+                    <p>To support decision-making</p>
+                </div>
+                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
+                    <i class="fa-solid fa-database text-3xl"></i>
+                    <h4 class="text-md text-center font-bold text-blue-400">Database management and SQL</h4>
+                    <p>For efficient data handling</p>
+                </div>
+                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
+                    <i class="fa-solid fa-chart-pie text-3xl"></i>
+                    <h4 class="text-md text-center font-bold text-blue-400">Statistical analysis and reporting</h4>
+                    <p class="text-center">To ensure accurate and impactful business outcomes</p>
+                </div>
+            </div>
+        </section>
+        <hr class="mx-auto max-w-1/4">
+        <section class="max-w-7xl mx-auto py-40 px-6" id="Projects">
+            <h2 class="text-5xl text-center font-extrabold mb-20">Projects</h2>
+            <div class="bg-[rgb(10,10,77)] p-5 rounded-2xl">
+                <h4 class="text-lg md:text-2xl font-bold text-blue-500 mb-8">Bank Management System</h4>
+                <p class="mb-8">Designed a SQL + Python system for managing customers, loans, and transactions, including CRUD operations and business insights.</p>
+                <div>
+                    <a class="px-9 py-1 text-base font-semibold tracking-wide text-[rgb(10,10,77)] bg-linear-to-br from-sky-400 to-cyan-300 rounded-lg cursor-pointer shadow-[0_0_20px_rgba(56,189,248,0.45)] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(56,189,248,0.75)]
+           active:scale-95" href="https://github.com/MalakSherif2/Bank-Management-System-SQL-Python" target="_blank">View Project</a>
+                </div>
+            </div>
+        </section>
+        <hr class="mx-auto max-w-1/4">
+        <section class="max-w-7xl mx-auto py-40 px-6" id="Contact">
+            <h2 class="text-5xl text-center font-extrabold mb-16">Contact</h2>
+            <p class="text-center text-lg md:text-2xl mb-20">✨ I'm always open to new opportunities and collaborations — feel free to reach out!</p>
+            <ul class="flex flex-wrap justify-evenly items-center gap-4">
+                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out">
+                    <a href="https://maps.app.goo.gl/hypmdmN3cEby7nCe8" target="_blank"><i class="fa-solid text-xl md:text-2xl fa-location-dot"></i> 
+                        Al-Haram, Giza, Egypt
+                    </a>
+                </li>
+                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out">
+                    <a href="tel:+201099544189" target="_blank"><i class="fa-solid text-xl md:text-2xl fa-phone"></i>
+                        +20 1099544189
+                    </a>
+                </li>
+                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out">
+                    <a href="mailto:malaksherif375@gmail.com" target="_blank"><i class="fa-solid text-xl md:text-2xl fa-envelope"></i> 
+                        Email
+                    </a>
+                </li>
+                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out">
+                    <a href="https://www.linkedin.com/in/malak-sherif-b03138357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands text-xl md:text-2xl fa-linkedin"></i> 
+                        Linkedin
+                    </a>
+                </li>
+                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out">
+                    <a href="https://github.com/MalakSherif2" target="_blank"><i class="fa-brands text-xl md:text-2xl fa-github"></i> 
+                        Github
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
