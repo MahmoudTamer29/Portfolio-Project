@@ -1,241 +1,524 @@
-<!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script defer src="main.js"></script>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body class="min-h-screen font-sans-serif bg-linear-to-r from-purple-900 to-blue-700 text-white">
-    <header class="bg-[rgb(32,32,204)] fixed top-0 left-0 right-0 shadow-md">
-        <div class="max-w-7xl mx-auto py-3 px-6">
-            <nav class="flex justify-between items-center">
-                <h2 href="#" class="text-xl font-bold">Malak Sherif</h2>
-                <ul class="md:flex justify-center items-center gap-3 hidden">
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Home">Home</a></li>
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#About">About</a></li>
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Education">Education</a></li>
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Skills">Skills</a></li>
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Experience">Experience</a></li>
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Services">Services</a></li>
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Projects">Projects</a></li>
-                    <li class=""><a class="hover:text-blue-200 transition-all duration-300 ease-in-out" href="#Contact">Contact</a></li>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fashion Photography Portfolio</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="./bootstrap-5.3.8-dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-black text-light">
+    <header>
+      <section class="min-vh-100 container-lg mx-auto">
+        <div class="hero">
+          <div class="layer d-flex flex-column justify-content-between">
+            <div class="container-fluid gap-xl-4 mt-4">
+              <nav
+                class="container d-flex flex-xl-column justify-content-between align-items-center gap-5"
+              >
+                <img
+                  src="./img/Mason-Leblanc.svg"
+                  alt=""
+                  width="170"
+                  class="img-fluid"
+                  loading="lazy"
+                />
+                <ul
+                  class="nav justify-content-center custom-nav d-none d-xl-flex flex-row text-center gap-4"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">HOME</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">PORTFOLIO</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">SERVICES</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">CONTACT</a>
+                  </li>
                 </ul>
-                <button id="menu-btn" class="md:hidden fixed top-4 right-6 z-50">
-                    <i id="menu-icon" class="fa fa-bars text-2xl"></i>
+                <button
+                  class="d-xl-none border-1 border-white rounded-circle d-flex justify-content-center align-items-center"
+                  id="nav-btn"
+                >
+                  <i class="fa-solid fa-bars"></i>
                 </button>
-            </nav>
-            <div id="mobile-menu" class="fixed top-0 right-0 h-full w-3/4 bg-[rgb(20,40,120)] z-40 translate-x-full transition-transform duration-300 ease-in-out flex flex-col justify-center items-center px-10 gap-6 text-2xl shadow-2xl">
-                <a class="mobile-link hover:text-blue-300" href="#Home">Home</a>
-                <a class="mobile-link hover:text-blue-300" href="#About">About</a>
-                <a class="mobile-link hover:text-blue-300" href="#Education">Education</a>
-                <a class="mobile-link hover:text-blue-300" href="#Skills">Skills</a>
-                <a class="mobile-link hover:text-blue-300" href="#Experience">Experience</a>
-                <a class="mobile-link hover:text-blue-300" href="#Services">Services</a>
-                <a class="mobile-link hover:text-blue-300" href="#Projects">Projects</a>
-                <a class="mobile-link hover:text-blue-300" href="#Contact">Contact</a>
+              </nav>
             </div>
-            <div id="menu-overlay" class="fixed inset-0 bg-black/50 z-30 hidden"></div>
+            <div class="container text-center pb-5">
+              <h1
+                class="fs-1"
+                style="font-family: Fahkwang, sans-serif; font-family: 700"
+              >
+                THE FASHION INDUSTRY <br />
+                THROUGH A LENSE
+              </h1>
+            </div>
+          </div>
         </div>
+        <div class="row container-xl mx-auto mb-5">
+          <div
+            class="col-12 col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center mt-5"
+          >
+            <div
+              class="img-container pb-xl-5 d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./img/link-1.png"
+                alt="photo"
+                class="object-fit-cover w-75 img-fluid"
+                loading="lazy"
+              />
+              <a
+                href="#"
+                class="mt-2 text-decoration-none text-white-50"
+                style="font-size: 14px"
+                >VIEW PORTFOLIO
+                <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center mt-5"
+          >
+            <div
+              class="img-container d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./img/link-2.png"
+                alt="photo"
+                class="object-fit-cover w-75 img-fluid"
+                loading="lazy"
+              />
+              <a
+                href="#"
+                class="mt-2 text-decoration-none text-white-50"
+                style="font-size: 14px"
+                >BIOGRAPHY <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center mt-5"
+          >
+            <div
+              class="img-container pb-xl-5 d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./img/link-3.png"
+                alt="photo"
+                class="object-fit-cover w-75 img-fluid"
+                loading="lazy"
+              />
+              <a
+                href="#"
+                class="mt-2 text-decoration-none text-white-50"
+                style="font-size: 14px"
+                >SERVICES <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div
+            class="col-12 col-md-6 col-xl-3 d-flex flex-column justify-content-center align-items-center mt-5"
+          >
+            <div
+              class="img-container d-flex flex-column justify-content-center align-items-center"
+            >
+              <img
+                src="./img/link-4.png"
+                alt="photo"
+                class="object-fit-cover w-75 img-fluid"
+                loading="lazy"
+              />
+              <a
+                href="#"
+                class="mt-2 text-decoration-none text-white-50"
+                style="font-size: 14px"
+                >CONTACT <i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
     </header>
-    <main class="">
-        <section class="max-w-7xl mx-auto py-52 px-6 flex justify-between gap-7 items-center flex-col-reverse md:flex-row">
-            <div class="flex justify-center items-start gap-7 flex-col" id="Home">
-                <h1 class="text-5xl text-center md:text-left font-extrabold">Malak Sherif</h1>
-                <p class="text-2xl text-blue-500 font-semibold">Data Scientist</p>
-                <p class="text-lg">Beyond my technical expertise, I also have a passion for drawing 🎨. <br>This creative perspective enhances my ability to design dashboards and reports that <br> are not only accurate but also visually engaging and impactful.</p>
-                <div>
-                    <a href="#Projects" class="bg-indigo-700 py-0.5 px-12 rounded-lg hover:bg-indigo-500 transition-all duration-300 ease-in-out text-md font-semibold">Projects</a>
-                </div>
-                <div>
-                    <ul class="flex justify-center content-center gap-8">
-                        <li class="flex flex-col justify-center content-center text-xl text-center">
-                            <span class="text-3xl font-extrabold text-blue-500">1+</span>
-                            Projects
-                        </li>
-                        <li class="flex flex-col justify-center content-center text-xl text-center">
-                            <span class="text-3xl font-extrabold text-blue-500">AI</span>
-                            Specialization
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="">
-                <img class="md:w-72 md:h-72 w-64 h-64 border border-fuchsia-800 rounded-full" src="/assets/personal-photo.jpg" alt="personal-photo" class="">
-            </div>
-        </section>
-        <hr class="mx-auto max-w-1/4">
-        <section class="max-w-7xl mx-auto py-40 px-6" id="About">
-            <h2 class="text-5xl text-center font-extrabold mb-20">About Me</h2>
-            <article class="flex flex-col justify-center items-center gap-3.5 md:w-4/5">
-                <p class="text-xl">I am a passionate Data Scientist in training with a strong foundation in programming, statistics, and databases. I specialize in Python, SQL, Power BI, and machine learning techniques to transform raw data into actionable insights and predictive models. Currently, I am enhancing my skills through the DEPI program in Data Science & AI, working on real-world projects that combine technical expertise with creativity.</p>
-                <p class="text-xl">My goal is to support businesses and organizations in making data-driven decisions that boost efficiency and generate measurable impact. With a mix of analytical thinking and problem-solving skills, I am eager to contribute to innovative projects and connect with professionals who share the same vision.</p>
-            </article>
-        </section>
-        <hr class="mx-auto max-w-1/4">
-        <section class="max-w-7xl mx-auto py-40 px-6" id="Education">
-            <h2 class="text-5xl text-center font-extrabold mb-20">Education</h2>
-            <div class="flex justify-start items-start gap-4 bg-[rgb(10,10,77)] p-8 rounded-2xl">
-                <i class="fa-solid fa-graduation-cap text-4xl"></i>
-                <div class="">
-                    <h3 class="text-3xl font-bold mb-2">Computer Science & Statistics</h3>
-                    <ul class="">
-                        <li class="text-gray-400 mb-2">Helwan University</li>
-                        <li class="text-orange-300">October 2023 - June 2027</li>
-                    </ul>
-                </div>	 
-            </div>
-        </section>
-        <hr class="mx-auto max-w-1/4">
-        <section class="max-w-7xl mx-auto py-40 px-6" id="Skills">
-            <div class="grid grid-cols-1 grid-rows-6 md:grid-cols-3 md:grid-rows-2 gap-4 mb-12">
-                <h2 class="text-5xl text-center font-extrabold mb-20">Technical Skills</h2>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
-                    <h3 class="text-2xl mb-4 text-blue-800">Tools</h3>
-                    <ul class="flex justify-center items-center flex-wrap gap-3">
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">Power BI</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">Jupyter Notebook</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">VS Code</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">GitHub</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(88,255,88)]">Excel</li>
-                    </ul>
-                </div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
-                    <h3 class="text-2xl mb-4 text-blue-800">Libraries</h3>
-                    <ul class="flex justify-center items-center flex-wrap gap-3">
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">pandas</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">numpy</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">seaborn</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">matplotlib</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-[rgb(114,201,255)]">scikit learn</li></ul>
-                </div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
-                    <h3 class="text-2xl mb-6 text-blue-800">Web Development</h3>
-                    <ul class="flex justify-start items-center flex-wrap gap-3">
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-gray-300">HTML</li>
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-gray-300">CSS</li>
-                    </ul>
-                </div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
-                    <h3 class="text-2xl mb-6 text-blue-800">Database</h3>
-                    <ul class="flex justify-start items-center flex-wrap gap-3">
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-orange-500">SQL</li>
-                    </ul>
-                </div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl">
-                    <h3 class="text-2xl mb-6 text-blue-800">Programming Language</h3>
-                    <ul class="flex justify-start items-center flex-wrap gap-3">
-                        <li class="border border-black rounded-lg px-2.5 py-0.5 text-yellow-200">Python</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 grid-rows-8 md:grid-cols-4 md:grid-rows-2 gap-0 md:gap-4" id="Skills">
-                <h2 class="text-5xl text-center font-extrabold mb-20">Soft Skills</h2>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Problem-Solving</div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Analytic Thinking</div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Communication</div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Teamwork</div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Attention to Details</div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Time Management</div>
-                <div class="bg-[rgb(10,10,77)] p-4 rounded-2xl text-2xl text-gray-300 h-24">Creativity</div>
-            </div>
-        </section>
-        <hr class="mx-auto max-w-1/4">
-        <section class="max-w-7xl mx-auto py-40 px-6" id="Experience">
-            <h2 class="text-5xl text-center font-extrabold mb-20">Experience</h2>
-            <div class="mb-20 bg-[rgb(10,10,77)] p-5 rounded-2xl px-7">
-                <h3 class="text-lg md:text-xl mb-6 text-blue-600 font-bold">Data Science & AI Trainee – DEPI Program with eYouth(Jun 2025 – Dec 2025)</h3>
-                <ul class="flex flex-col justify-center items-start list-disc mx-3">
-                    <li class="mb-2.5">Designed and implemented data-driven projects using Python, SQL, and Power BI.</li>
-                    <li class="mb-2.5">Built a Bank Management System to manage customers, employees, and loans, applying database design and SQL queries.</li>
-                    <li class="mb-2.5">Conducted data cleaning, exploration, and visualization for real-world datasets.</li>
-                    <li class="mb-2.5">Collaborated with a team of 5 members to deliver end-to-end solutions.</li>
-                </ul>
-            </div>
-            <div class="">
-                <h2 class="text-4xl md::text-5xl text-center font-extrabold mb-20">Extracurricular activities</h2>
-                <div class="mb-20 bg-[rgb(10,10,77)] p-5 rounded-2xl px-7">
-                    <h3 class="text-lg md:text-xl mb-6 text-blue-600 font-bold">Youth Leading Youth (YLY) – Ministry of Youth & Sports(2025 – Present)</h3>
-                    <ul class="flex flex-col justify-center items-start list-disc mx-3">
-                        <li class="">Volunteer - Social Media team</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-        <hr class="mx-auto max-w-1/4">
-        <section class="max-w-7xl mx-auto py-40 px-6" id="Services">
-            <h2 class="text-5xl text-center font-extrabold mb-16">Offered Services</h2>
-            <p class="text-center text-2xl italic text-gray-300 mb-16">I provide</p>
-            <div class="grid grid-cols-1 grid-rows-4 md:grid-cols-4 md:grid-rows-1 gap-4">
-                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
-                    <i class="fa-solid fa-chart-line text-3xl"></i>
-                    <h4 class="text-md text-center font-bold text-blue-400">Data Analysis and Visualization</h4>
-                    <p>Deliver actionable insights</p>
-                </div>
-                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
-                    <i class="fa-solid fa-robot text-3xl"></i>
-                    <h4 class="text-md text-center font-bold text-blue-400">Machine learning, Deep learning and Predective Modeling</h4>
-                    <p>To support decision-making</p>
-                </div>
-                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
-                    <i class="fa-solid fa-database text-3xl"></i>
-                    <h4 class="text-md text-center font-bold text-blue-400">Database management and SQL</h4>
-                    <p>For efficient data handling</p>
-                </div>
-                <div class="bg-[rgb(10,10,77)] p-5 py-10 rounded-2xl flex flex-col justify-center items-center gap-4">
-                    <i class="fa-solid fa-chart-pie text-3xl"></i>
-                    <h4 class="text-md text-center font-bold text-blue-400">Statistical analysis and reporting</h4>
-                    <p class="text-center">To ensure accurate and impactful business outcomes</p>
-                </div>
-            </div>
-        </section>
-        <hr class="mx-auto max-w-1/4">
-        <section class="max-w-7xl mx-auto py-40 px-6" id="Projects">
-            <h2 class="text-5xl text-center font-extrabold mb-20">Projects</h2>
-            <div class="bg-[rgb(10,10,77)] p-5 rounded-2xl">
-                <h4 class="text-lg md:text-2xl font-bold text-blue-500 mb-8">Bank Management System</h4>
-                <p class="mb-8">Designed a SQL + Python system for managing customers, loans, and transactions, including CRUD operations and business insights.</p>
-                <div>
-                    <a class="px-9 py-1 text-base font-semibold tracking-wide text-[rgb(10,10,77)] bg-linear-to-br from-sky-400 to-cyan-300 rounded-lg cursor-pointer shadow-[0_0_20px_rgba(56,189,248,0.45)] transition-all duration-300 ease-out hover:-translate-y-1 hover:shadow-[0_0_30px_rgba(56,189,248,0.75)]
-           active:scale-95" href="https://github.com/MalakSherif2/Bank-Management-System-SQL-Python" target="_blank">View Project</a>
-                </div>
-            </div>
-        </section>
-        <hr class="mx-auto max-w-1/4">
-        <section class="max-w-7xl mx-auto py-40 px-6" id="Contact">
-            <h2 class="text-5xl text-center font-extrabold mb-16">Contact</h2>
-            <p class="text-center text-lg md:text-2xl mb-20">✨ I'm always open to new opportunities and collaborations — feel free to reach out!</p>
-            <ul class="grid grid-cols-1 md:grid-cols-3 grid-rows-5 md:grid-rows-2 gap-2 rounded-2xl bg-white/10 backdrop-blur-md border border-white/20 px-5 py-5 text-white shadow-lg">
-                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out row-start-1 col-start-1 col-span-2">
-                    <a href="https://maps.app.goo.gl/hypmdmN3cEby7nCe8" target="_blank"><i class="fa-solid text-xl md:text-2xl fa-location-dot"></i> 
-                        Al-Haram, Giza, Egypt
-                    </a>
-                </li>
-                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out row-start-1 col-start-3">
-                    <a href="tel:+201099544189" target="_blank"><i class="fa-solid text-xl md:text-2xl fa-phone"></i>
-                        +20 1099544189
-                    </a>
-                </li>
-                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out row-start-2 col-start-3">
-                    <a href="mailto:malaksherif375@gmail.com" target="_blank"><i class="fa-solid text-xl md:text-2xl fa-envelope"></i> 
-                        Email
-                    </a>
-                </li>
-                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out row-start-2 col-start-1">
-                    <a href="https://www.linkedin.com/in/malak-sherif-b03138357?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank"><i class="fa-brands text-xl md:text-2xl fa-linkedin"></i> 
-                        Linkedin
-                    </a>
-                </li>
-                <li class="font-bold text-lg md:text-2xl hover:translate-y-1 transition-all duration-300 ease-in-out row-start-2 col-start-2">
-                    <a href="https://github.com/MalakSherif2" target="_blank"><i class="fa-brands text-xl md:text-2xl fa-github"></i> 
-                        Github
-                    </a>
-                </li>
+    <main>
+      <section>
+        <div class="about container-fluid w-100 min-vh-100">
+          <div class="layer2"></div>
+        </div>
+        <div
+          class="content container-lg mx-auto d-flex flex-column flex-xl-row justify-content-between align-items-start gap-5"
+        >
+          <div>
+            <ul
+              class="container-lg mx-auto d-flex flex-xl-column justify-content-start align-items-start gap-4"
+            >
+              <li style="list-style-type: none">
+                <a
+                  href="#"
+                  class="btn btn-light rounded-circle p-1 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="fab fa-youtube text-dark"></i>
+                </a>
+              </li>
+              <li style="list-style-type: none">
+                <a
+                  href="#"
+                  class="btn btn-light rounded-circle p-1 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="fab fa-linkedin-in text-dark"></i>
+                </a>
+              </li>
+              <li style="list-style-type: none">
+                <a
+                  href="#"
+                  class="btn btn-light rounded-circle p-1 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="fab fa-instagram text-dark"></i>
+                </a>
+              </li>
+              <li style="list-style-type: none">
+                <a
+                  href="#"
+                  class="btn btn-light rounded-circle p-1 d-flex align-items-center justify-content-center"
+                  style="width: 40px; height: 40px"
+                >
+                  <i class="fab fa-facebook-f text-dark"></i>
+                </a>
+              </li>
             </ul>
-        </section>
+          </div>
+          <div
+            class="container-lg mx-auto d-flex flex-column justify-content-center align-items-start gap-4"
+          >
+            <p class="text-start w-100">
+              Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et massa
+              mi. Aliquam in hendrerit urna. Pellentesque sit amet sapien
+              fringilla, mattis ligula consectetur, ultrices mauris. Maecenas
+              vitae mattis tellus. Nullam quis imperdiet augue. Vestibulum
+              auctor ornare leo, non suscipit magna interdum eu. Curabitur
+            </p>
+            <p class="text-start w-100 text-secondary">
+              Erat placerat. In iaculis arcu eros, eget tempus orci facilisis
+              id. Praesent lorem orci, mattis non efficitur id, ultricies vel
+              nibh. Sed volutpat lacus vitae gravida viverra. Fusce vel tempor
+              elit. Proin tempus, magna id scelerisque vestibulum, nulla ex
+            </p>
+            <p class="text-start w-100 text-secondary">
+              Pharetra sapien, tempor posuere massa neque nec felis. Aliquam sem
+              ipsum, vehicula ac tortor vel, egestas ullamcorper dui. Curabitur
+              at risus sodales, tristique est id, euismod justo. Mauris nec leo
+              non libero sodales lobortis. Quisque a neque pretium, dictum
+              tellus vitae, euismod neque. Nulla facilisi. Phasellus ultricies
+              dignissim nibh ut.
+            </p>
+            <p class="text-start w-100 text-secondary">
+              Nam et quam sit amet turpis finibus maximus tempor eget augue.
+              Aenean at ultricies lorem. Sed egestas ligula tortor, sit amet
+              mattis ex feugiat non. Duis purus diam, dictum et ante at, commodo
+              iaculis urna. Aenean lacinia, nisl id vehicula condimentum, enim
+              massa.
+            </p>
+            <div class="full-bio">
+              <a
+                href="#"
+                class="text-light fs-5"
+                style="font-family: Fahkwang, sans-serif; color: #efe6d5"
+                >READ FULL BIO</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-lg mx-auto">
+        <div class="portfolio">
+          <div
+            class="d-flex justify-content-between align-items-center container-lg mx-auto"
+          >
+            <h2
+              class="text-center fs-2"
+              style="font-family: Fahkwang, sans-serif; font-weight: 700"
+            >
+              PORTFOLIO
+            </h2>
+            <div>
+              <a href="#" class="lh-1 fs-5 d-none d-md-block portfolio-link"
+                >VIEW PORTFOLIO</a
+              >
+            </div>
+          </div>
+          <div class="row mt-5 container-xl mx-auto g-4">
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/8.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/4.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/2.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/1.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/6.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/5.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/3.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+            <div class="col-6 col-md-3">
+              <img
+                src="./img/7.png"
+                alt=""
+                class="w-100 img-fluid img-gallery"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div>
+            <a
+              href="#"
+              style="
+                font-family: Fahkwang, sans-serif;
+                font-weight: 600;
+                color: #efe6d5;
+                letter-spacing: 1px;
+              "
+              class="lh-1 fs-6 d-block d-md-none text-center mt-4"
+              >VIEW PORTFOLIO</a
+            >
+          </div>
+        </div>
+      </section>
+      <section
+        class="services-section container-lg mx-auto"
+        style="margin-top: 10rem"
+      >
+        <div class="container">
+          <h2
+            class="text-center fs-2"
+            style="
+              font-family: Fahkwang, sans-serif;
+              font-weight: 700;
+              margin-bottom: 60px;
+            "
+          >
+            SERVICES
+          </h2>
+
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-4">
+              <div
+                class="service-box d-flex flex-column justify-content-center align-items-center align-items-xl-start"
+              >
+                <h3 class="service-title text-xl-start text-center">
+                  Photoshoot
+                </h3>
+                <p class="service-text text-xl-start text-center">
+                  Nam et quam sit amet turpis finibus maximus tempor eget augue.
+                  Aenean at ultricies lorem. Sed egestas ligula tortor,
+                </p>
+                <a
+                  href="#"
+                  class="explore-link text-xl-start text-center text-decoration-none"
+                  >EXPLORE</a
+                >
+              </div>
+
+              <div
+                class="service-box d-flex flex-column justify-content-center align-items-center align-items-xl-start"
+              >
+                <h3 class="service-title text-xl-start text-center">Editing</h3>
+                <p class="service-text text-xl-start text-center">
+                  Duis aute irure dolor in reprehenderit in voluptate velit esse
+                  cillum dolore eu fugiat nulla pariatur
+                </p>
+                <a
+                  href="#"
+                  class="explore-link text-xl-start text-center text-decoration-none"
+                  >EXPLORE</a
+                >
+              </div>
+            </div>
+
+            <div class="col-lg-4 text-center mb-5 mb-lg-0">
+              <div class="service-img">
+                <img src="./img/p-9.jpg" alt="Photography" />
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div
+                class="service-box d-flex flex-column justify-content-center align-items-center align-items-xl-start"
+              >
+                <h3 class="service-title text-xl-start text-center">
+                  Retouching
+                </h3>
+                <p class="service-text text-xl-start text-center">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna
+                </p>
+                <a
+                  href="#"
+                  class="explore-link text-xl-start text-center text-decoration-none"
+                  >EXPLORE</a
+                >
+              </div>
+
+              <div
+                class="service-box d-flex flex-column justify-content-center align-items-center align-items-xl-start"
+              >
+                <h3 class="service-title text-xl-start text-center">
+                  Lightning
+                </h3>
+                <p class="service-text text-xl-start text-center">
+                  Excepteur sint occaecat cupidatat non proident, sunt in culpa
+                  qui officia deserunt mollit anim id est laborum.
+                </p>
+                <a
+                  href="#"
+                  class="explore-link text-xl-start text-center text-decoration-none"
+                  >EXPLORE</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container-lg mx-auto">
+          <div class="row justify-content-center">
+            <div class="">
+              <div class="text-center text-xl-start">
+                <span
+                  class="quote-icon d-block text-white text-xl-start text-center"
+                  >❝</span
+                >
+
+                <p class="text-xl-start text-center fs-4 mb-5">
+                  Erat placerat. In iaculis arcu eros, eget tempus orci
+                  facilisis id. Praesent lorem orci, mattis non efficitur id,
+                  ultricies vel nibh. Sed volutpat lacus vitae gravida viverra.
+                  Fusce vel tempor elit. Proin tempus, magna id scelerisque
+                  vestibulum, nulla ex
+                </p>
+
+                <div>
+                  <figure
+                    class="d-flex flex-column flex-xl-row justify-content-xl-start justify-content-center align-items-center gap-xl-4 gap-1 text-center text-xl-start"
+                  >
+                    <img src="./img/face.png" alt="avatar" />
+                    <figcaption>
+                      Jenny Raulph <br /><span class="text-white-50"
+                        >Owner at Girl Gang</span
+                      >
+                    </figcaption>
+                  </figure>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
-</body>
+    <footer>
+      <section>
+        <div class="cta container-fluid mx-auto">
+          <div
+            class="layer3 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h2>LETS WORK TOGETHER</h2>
+            <div>
+              <a href="#" class="cta-link">GET IN TOUCH</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-lg mx-auto" style="margin-top: 4rem">
+        <div
+          class="d-flex flex-column justify-content-center align-items-center gap-5"
+        >
+          <div>
+            <img
+              src="./img/Mason-Leblanc.svg"
+              alt=""
+              width="170"
+              class="img-fluid"
+              loading="lazy"
+            />
+          </div>
+          <div>
+            <ul class="d-flex justify-content-center align-items-center gap-4">
+              <li style="list-style-type: none">Facebook</li>
+              <li style="list-style-type: none">Instagram</li>
+              <li style="list-style-type: none">YouTube</li>
+              <li style="list-style-type: none">LinkedIn</li>
+            </ul>
+          </div>
+          <div>
+            <p class="text-center">
+              Copyright © 2026 Fashion Photography Portfolio | Powered by
+              Fashion Photography Portfolio
+            </p>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script src="./bootstrap-5.3.8-dist/js/bootstrap.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
